@@ -1,0 +1,272 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 32px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ── Empty state ── */
+.empty {
+  text-align: center;
+  padding: 80px 32px;
+}
+
+.emptyIcon {
+  color: #ddd;
+  margin-bottom: 16px;
+}
+
+.emptyText {
+  font-size: 20px;
+  font-weight: 600;
+  color: #999;
+  margin-bottom: 8px;
+}
+
+.emptySubtext {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 28px;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: #1a1a2e;
+  color: white;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.backLink:hover {
+  background: #e94560;
+}
+
+/* ── Layout ── */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  align-items: start;
+}
+
+/* ── Cart item card ── */
+.item {
+  display: flex;
+  gap: 16px;
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s;
+}
+
+.item:hover {
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+.itemImage {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.itemBody {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.itemTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.itemName {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 4px;
+}
+
+.itemCategory {
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.deleteButton {
+  background: none;
+  border: none;
+  color: #ccc;
+  padding: 4px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.deleteButton:hover {
+  color: #e94560;
+}
+
+.itemBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+/* ── Quantity controls ── */
+.qtyControl {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.qtyBtn {
+  width: 34px;
+  height: 34px;
+  background: #f8f8f8;
+  border: none;
+  font-size: 18px;
+  color: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.qtyBtn:hover {
+  background: #1a1a2e;
+  color: white;
+}
+
+.qtyNumber {
+  width: 36px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a2e;
+  border-left: 2px solid #eee;
+  border-right: 2px solid #eee;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemPrice {
+  font-size: 17px;
+  font-weight: 800;
+  color: #e94560;
+}
+
+.itemUnitPrice {
+  font-size: 12px;
+  color: #bbb;
+  text-align: right;
+}
+
+/* ── Order summary sidebar ── */
+.summary {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  position: sticky;
+  top: 90px;
+}
+
+.summaryTitle {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.summaryDivider {
+  border: none;
+  border-top: 2px dashed #eee;
+  margin: 16px 0;
+}
+
+.summaryTotal {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.checkoutButton {
+  width: 100%;
+  padding: 14px;
+  background: #e94560;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background 0.2s, transform 0.1s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.checkoutButton:hover {
+  background: #c73652;
+  transform: translateY(-1px);
+}
+
+.continueLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #888;
+  transition: color 0.2s;
+}
+
+.continueLink:hover {
+  color: #1a1a2e;
+}

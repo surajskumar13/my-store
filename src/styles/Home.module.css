@@ -1,0 +1,92 @@
+.home {
+  padding: 28px 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.searchWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  border: 2px solid #eee;
+  border-radius: 24px;
+  padding: 8px 16px;
+  transition: border-color 0.2s;
+}
+
+.searchWrapper:focus-within {
+  border-color: #1a1a2e;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  width: 200px;
+  background: transparent;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 7px 18px;
+  border-radius: 20px;
+  border: 2px solid #ddd;
+  background: white;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filterBtn:hover {
+  border-color: #1a1a2e;
+  color: #1a1a2e;
+}
+
+.filterBtnActive {
+  padding: 7px 18px;
+  border-radius: 20px;
+  border: 2px solid #1a1a2e;
+  background: #1a1a2e;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+.empty {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  margin-top: 60px;
+  grid-column: 1 / -1;
+}

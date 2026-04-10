@@ -1,0 +1,52 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background: #1d1d4b;
+    position: sticky ;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.logo{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.link{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+.links:hover{
+    opacity: 1;
+}
+.cartWrapper{
+    position: relative;
+    top: -8px;
+    right: -10px;
+    color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
