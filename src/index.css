@@ -22,6 +22,6 @@ button {
 }
 
 img {
-  display: block;       /* ← ADD THIS — fixes image spacing issues */
+  display: block;
   max-width: 100%;
 }

@@ -393,3 +393,32 @@
   color: #bbb;
   font-size: 15px;
 }
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 16px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .productGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .productGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}

@@ -281,3 +281,33 @@
 .homeButton:hover {
   background: #e94560;
 }
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 16px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    position: static;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .submitButton {
+    font-size: 14px;
+    padding: 12px;
+  }
+}

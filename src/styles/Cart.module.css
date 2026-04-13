@@ -270,3 +270,34 @@
 .continueLink:hover {
   color: #1a1a2e;
 }
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 16px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    position: static;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .item {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .itemImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}

@@ -19,6 +19,7 @@
   height: 180px;
   object-fit: cover;
   display: block;
+  cursor: pointer;
 }
 
 .info {
@@ -92,4 +93,34 @@
 .wishlistButton:hover {
   border-color: #e94560;
   color: #e94560;
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .image {
+    height: 140px;
+  }
+
+  .info {
+    padding: 10px;
+  }
+
+  .name {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .addButton {
+    font-size: 11px;
+    padding: 8px 6px;
+    gap: 4px;
+  }
+
+  .wishlistButton {
+    padding: 8px 10px;
+  }
 }

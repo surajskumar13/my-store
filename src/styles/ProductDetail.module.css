@@ -204,3 +204,36 @@
   color: #999;
   font-size: 18px;
 }
+/* ── Tablet ── */
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 16px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    min-height: 280px;
+  }
+
+  .details {
+    padding: 24px;
+  }
+}
+
+/* ── Mobile ── */
+@media (max-width: 480px) {
+  .name {
+    font-size: 22px;
+  }
+
+  .price {
+    font-size: 26px;
+  }
+
+  .details {
+    padding: 16px;
+  }
+}
