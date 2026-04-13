@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom'
 import { FiHome, FiShoppingCart } from 'react-icons/fi'
+import { AiOutlineHeart } from 'react-icons/ai'
 import { MdStorefront } from 'react-icons/md'
 import { useCart } from '../context/CartContext'
+import { useWishlist } from '../context/WishlistContext'
 import styles from '../styles/Navbar.module.css'
 
 function Navbar() {
   const { totalItems } = useCart()
+  const { totalWishlist } = useWishlist()
 
   return (
     <nav className={styles.navbar}>
@@ -18,6 +21,13 @@ function Navbar() {
         <Link to="/" className={styles.link}>
           <FiHome size={18} />
           Home
+        </Link>
+
+        <Link to="/wishlist" className={styles.wishlistWrapper}>
+          <AiOutlineHeart size={24} />
+          {totalWishlist > 0 && (
+            <span className={styles.badge}>{totalWishlist}</span>
+          )}
         </Link>
 
         <Link to="/cart" className={styles.cartWrapper}>

@@ -50,3 +50,10 @@
     justify-content: center;
     font-weight: 700;
 }
+.wishlistWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
